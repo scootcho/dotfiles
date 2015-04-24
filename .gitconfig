@@ -1,0 +1,21 @@
+[user]
+  name = Scott Yu
+  email = scott.tj.yu@gmail.com
+[push]
+  default = simple
+[alias]
+  st = status
+  co = checkout
+  br = branch
+  up = rebase
+  ci = commit
+  l = log --pretty=colored
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  resetlast = reset --hard HEAD~1
+[core]
+  editor = vim
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[color]
+  ui = true
