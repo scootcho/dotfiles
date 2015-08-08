@@ -27,6 +27,7 @@ set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256
 " colours)
 set t_Co=256
+set background=dark
 
 " enable transparent background in vim
 highlight Normal ctermbg=none
@@ -54,6 +55,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/ctags.vim'
 Plugin 'bling/vim-airline'
+Plugin 'rking/ag.vim'
 
 " Snipmate plugins
 "Plugin "MarcWeber/vim-addon-mw-utils"
@@ -78,6 +80,8 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Clipboard
+set clipboard=unnamed
 
 " Powerline and Airline? (Fancy thingy at bottom stuff)
 set laststatus=2   " Always show the statusline
@@ -87,3 +91,5 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 map <C-e> :NERDTreeToggle<CR>    " map Ctrl-e to NERDTree Toggle
+" enable backspace for delete key in osx
+set backspace=indent,eol,start
