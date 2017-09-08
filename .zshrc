@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/scott/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -55,7 +55,7 @@ autoload -U compinit && compinit
 # User configuration
 DEFAULT_USER=`whoami` 
 
-export PATH="/Users/scott/.node/bin:/Users/scott/.rbenv/shims:/Users/scott/.nvm/versions/node/v4.2.1/bin:/usr/local/heroku/bin:/Users/scott/.rbenv/shims:/Users/scott/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/opt/ImageMagick/bin:/usr/local/mongodb/bin:/Users/scott/.rbenv/versions/2.3.0/bin"
+export PATH="$HOME/.node/bin:$HOME/.rbenv/shims:$HOME/.nvm/versions/node/v4.2.1/bin:/usr/local/heroku/bin:$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/opt/ImageMagick/bin:/usr/local/mongodb/bin:$HOME/.rbenv/versions/2.3.0/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -100,7 +100,7 @@ alias vim="/usr/local/bin/vim"
 export MONGO_PATH=/usr/local/mongodb
 export PATH=$PATH:$MONGO_PATH/bin
 
-[ -s "/Users/scott/.scm_breeze/scm_breeze.sh" ] && source "/Users/scott/.scm_breeze/scm_breeze.sh"
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 export PATH="$HOME/.bin:$PATH"
 ZSH_THEME=pygmalion
